@@ -2,6 +2,10 @@
 
 
 # example of manually configuring variables - in case its easier this way
+
+
+
+
 ltm_net_selfip:
   - selfip1:
     ltm_net_selfip_state: "create"
@@ -33,28 +37,21 @@ ltm_net_selfip:
 
 ltm_net_selfip:
   - selfip1:
-    ltm_net_selfip_state: "create"
     ltm_net_selfip_name: "self1"
-    ltm_net_selfip_address: "11.11.11.10"
+    ltm_net_selfip_address: "11.11.11.10/24"
   - selfip2:
-    ltm_net_selfip_state: "create"
     ltm_net_selfip_name: "self2"
-    ltm_net_selfip_address: "12.12.12.11"
+    ltm_net_selfip_address: "12.12.12.11/24"
   - selfip3:
-    ltm_net_selfip_state: "create"
     ltm_net_selfip_name: "self3"
-    ltm_net_selfip_address: "13.13.13.13"
+    ltm_net_selfip_address: "13.13.13.13/24"
 
 ltm_net_selfip:
   - selfip1:
     ltm_net_selfip_name: "self1"
-    ltm_net_selfip_address: "11.11.11.10"
-    ltm_net_selfip_netmask: "255.255.255.0"
-    ltm_net_selfip_vlan: "external"
+    ltm_net_selfip_address: "11.11.11.10/24"
   - selfip3:
     ltm_net_selfip_name: "self3"
-    ltm_net_selfip_address: "13.13.0.1"
-    ltm_net_selfip_netmask: "255.255.255.0"
-    ltm_net_selfip_vlan: "external
+    ltm_net_selfip_address: "13.13.0.1/24"
 
 
